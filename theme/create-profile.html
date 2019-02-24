@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <title>Kết nối anh em</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+       <!-- Menu đã đăng nhập -->
+   <div id="menu">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-1">
+      <div class="container-fluid">
+        <a class="navbar-brand text-warning" href="landing.html">HeloDev</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="mobile-nav">
+          <ul class="navbar-nav" style="display: contents;">
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="profiles.html"> Profiles Developer
+              </a>
+            </li>
+            
+          </ul>
+  
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" style="margin: 0"> 
+              <a class="nav-link text-warning" href="feed.html">
+                Chat-room
+              </a>
+            </li>
+            <li class="nav-item"  style="margin: 0">
+              <a class="nav-link text-warning" href="dashboard.html">
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item"  style="margin: 0">
+              <a class="nav-link text-warning" href="#">
+                <img class="rounded-circle" style="width: 25px;margin-right:5px" src="https://www.gravatar.com/avatar/anything?s=200&d=mm"
+                  alt="" title="You must have a Gravatar connected to your email to display an image" /> Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+    <!-- Create Profile -->
+    <!-- Edit Profile -->
+  <div class="create-profile" id="create-profile">
+    <div class="container">
+      <div class="row">
+          <a href="dashboard.html" class="btn btn-success mt-3 mb-3 float-left">
+              Back Dashboard
+            </a>
+      </div>
+      <div class="row">
+        <div class="col-md-8 m-auto pb-5">
+          <h1 class="display-4 text-center text-warning big-title">Edit Profile</h1>
+          <p class="lead text-center text-warning small-title">Nhập các thông tin của hồ sơ</p>
+          <small class="d-block pb-3 text-warning">* = required field</small>
+          <form action="add-experience.html">
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" placeholder="* Profile handle" name="handle" value="myprofilehandle"
+                required />
+              <small class="form-text text-warning">Tên của bạn, tên công ty, biệt danh, v..v..</small>
+            </div>
+            <div class="form-group">
+              <select class="form-control form-control-lg" name="status">
+                <option value="0">* Select Professional Status</option>
+                <option value="Developer">Developer</option>
+                <option value="Junior Developer">Junior Developer</option>
+                <option value="Senior Developer" selected>Senior Developer</option>
+                <option value="Manager">Manager</option>
+                <option value="Student or Learning">Student or Learning</option>
+                <option value="Instructor">Instructor or Teacher</option>
+                <option value="Intern">Intern</option>
+                <option value="Other">Other</option>
+              </select>
+              <small class="form-text text-warning">Chức vụ cao nhất mà bạn đã làm</small>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" placeholder="Company" name="company" value="Edusoft" />
+              <small class="form-text text-warning">Công ty mà bạn đang làm hoặc đã trải qua</small>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" placeholder="Website" name="website" value="http://www.edusoft.test"
+              />
+              <small class="form-text text-warning">Website của công ty mà bạn đã làm hoặc trải qua</small>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" placeholder="Location" name="location" value="Miami, FL" />
+              <small class="form-text text-warning">Địa bàn hoạt động</small>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" placeholder="Skills" name="skills" value="HTML,CSS,PHP,Python" />
+              <small class="form-text text-warning">Nhập các ngôn ngữ mà bạn có thể. Cách nhau bằng dấu ',' (VD: HTML,CSS,JavaScript)</small>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" placeholder="Github Username" name="githubusername" value="someusername"
+              />
+              <small class="form-text text-warning">Username Github của bạn</small>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control form-control-lg" placeholder="A short bio of yourself" name="bio">I am a web developer from Florida with around 8 years experience</textarea>
+              <small class="form-text text-warning">Một chút giới thiệu về bạn</small>
+            </div>
+
+            <div class="mb-3">
+              <button type="button" class="btn btn-success">Add mạng xã hội</button>
+              <span class="text-warning">Điều này không bắt buộc</span>
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-success text-white">
+                  <i class="fab fa-twitter"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control form-control-lg" placeholder="Twitter Profile URL" name="twitter" value="https://www.twitter.com/johndoe"
+              />
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-success text-white">
+                  <i class="fab fa-facebook"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control form-control-lg" placeholder="Facebook Page URL" name="facebook" />
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-success text-white">
+                  <i class="fab fa-linkedin"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control form-control-lg" placeholder="Linkedin Profile URL" name="linkedin" />
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-success text-white">
+                  <i class="fab fa-youtube"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control form-control-lg" placeholder="YouTube Channel URL" name="youtube" />
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text bg-success text-white">
+                  <i class="fab fa-instagram"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control form-control-lg" placeholder="Instagram Page URL" name="instagram" />
+            </div>
+            <input type="submit" class="btn btn-success btn-block mt-4" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-warning mt-1 p-4 text-center">
+      hikari.mei.119 &commat; gmail.com
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

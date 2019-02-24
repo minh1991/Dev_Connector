@@ -1,0 +1,120 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+#menu .navbar-brand {
+  font-weight: 500;
+  margin: 0 3%;
+}
+#menu .nav-item {
+  margin: 0 3%;
+}
+#landing {
+  position: relative;
+  background: url("../img/IMG_20190123_100357.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: -23px;
+  margin-bottom: -50px;
+}
+#profiles,
+#profile,
+#register,
+#login,
+#dashboard,
+#create-profile,
+#add-education,
+#add-experience,
+#feed {
+  /* position: relative; */
+  background: url("../img/IMG_20190123_100357 - Copy.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+}
+#landing .big-title,
+#profiles .big-title,
+#register .big-title,
+#login .big-title,
+#dashboard .big-title,
+#create-profile .big-title,
+#add-education .big-title,
+#add-experience .big-title {
+  font-weight: 300;
+  font-size: 3.5rem;
+}
+#landing .small-title,
+#profiles .small-title,
+#register .small-title,
+#login .small-title,
+#dashboard .small-title,
+#create-profile .small-title,
+#add-education .small-title,
+#add-experience .small-title {
+  font-size: 1.5rem;
+}
+.landing-inner {
+  padding-top: 80px;
+}
+
+#profiles .list-group-item,
+#create-profile .form-control option {
+  background: #00444d;
+}
+#profiles .btn {
+  width: 15vw;
+}
+footer {
+  font-weight: 500;
+}
+.dark-overlay {
+  background-image: linear-gradient(190deg, #92006f7a, #0044716b);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#profiles .card-body,
+#profile .profile-header .card-body,
+#profile .about .card-body,
+#profile .history .list-group-item,
+#profile .github,
+#register .form-group input,
+#login .form-group input,
+#experience .table,
+#education .table,
+#create-profile .form-group input,
+#create-profile .form-group select,
+#create-profile .form-group textarea,
+#create-profile .input-group input,
+#add-education .form-group input,
+#add-education .form-group textarea,
+#add-experience .form-group input,
+#add-experience .form-group textarea,
+#feed .card-body {
+  background-image: linear-gradient(45deg, #00444d, #e91e63);
+  color: #ffc107;
+  box-shadow: 0px 5px 10px 1px #28a745a8;
+}
+.card-form {
+  opacity: 0.9;
+}
+
+.latest-profiles-img {
+  width: 40px;
+  height: 40px;
+}
+
+.form-control::placeholder {
+  color: #f191b171 !important;
+}
+
+hr {
+  border: 1px solid #28a745;
+}
